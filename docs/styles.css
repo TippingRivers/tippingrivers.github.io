@@ -1,0 +1,223 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2933;
+  margin: 0;
+}
+
+.navbar {
+  font-size: 1.05rem;
+  background-color: #222322;
+}
+
+main.content {
+  max-width: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-bar {
+  width: 100vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  background: #222322;
+  color: white;
+  border-top: 1px solid #444;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.95rem;
+}
+
+.hero-image {
+  position: relative;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.35)),
+    url("images/andes.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+@media (max-width: 900px) {
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-image {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.collaborator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.collaborator-card {
+  text-align: center;
+}
+
+.collaborator-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  margin-bottom: 1rem;
+}
+
+.collaborator-card p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.feature-band {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 8%;
+  gap: 3rem;
+}
+
+.band-blue {
+  background-color: #dbeafe;
+}
+
+.band-light {
+  background-color: #f8fafc;
+}
+
+.band-green {
+  background-color: #dcfce7;
+}
+
+
+.feature-image img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.feature-text h2 {
+  color: #164e63;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.feature-text h2 a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.feature-text p {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+
+  .feature-band {
+    grid-template-columns: 1fr;
+    padding: 3rem 2rem;
+  }
+
+}
+
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  margin: 2rem auto;
+  border-radius: 12px;
+}
+
+.paper-title {
+  font-size: 1.2rem;
+}
+
+/* Plain research sections with bold dividers between them. */
+.research-section {
+  background-color: transparent;
+}
+
+.research-section {
+  position: relative;
+}
+
+.research-section + .research-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8%;
+  right: 8%;
+  border-top: 3px solid #55585c;
+}
+
+@media (max-width: 900px) {
+  .research-section + .research-section::before {
+    left: 2rem;
+    right: 2rem;
+  }
+}
+
+.research-section .feature-text h2 {
+  color: #55585c;
+}
+
+.about-container a[href="mailto:r.becker@imperial.ac.uk"] {
+  color: #000000;
+}

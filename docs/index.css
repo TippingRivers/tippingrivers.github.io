@@ -1,0 +1,74 @@
+.eu-funding-logo {
+  display: block;
+  width: 340px;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem auto 1.5rem;
+}
+
+.hero-image {
+  position: relative;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.35),
+                    rgba(0, 0, 0, 0.35)),
+    url("images/andes.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  height: 70vh;
+  width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 0 3px 12px rgba(0,0,0,0.5);
+}
+
+.hero-text p {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.column-screen {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.column-body {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-text p {
+    font-size: 2rem;
+  }
+
+}
