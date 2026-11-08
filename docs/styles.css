@@ -121,6 +121,10 @@ main.content {
   font-weight: 500;
 }
 
+.collaborator-card .collaborator-support {
+  color: #666;
+}
+
 .feature-band {
   width: 100vw;
   margin-left: calc(50% - 50vw);
